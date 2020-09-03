@@ -1,0 +1,33 @@
+{
+  "name": "neater",
+  "version": "1.0.0",
+  "description": "a cli tool to clean git branch",
+  "main": "index.js",
+  "bin": {
+    "nt": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "clear",
+    "git",
+    "git branch",
+    "node",
+    "cli",
+    "node-cli"
+  ],
+  "author": "duziten",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^26.0.10",
+    "chalk": "^4.1.0",
+    "commander": "^6.0.0",
+    "inquirer": "^7.3.3",
+    "minimatch": "^3.0.4",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}

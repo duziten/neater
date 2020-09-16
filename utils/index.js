@@ -37,6 +37,13 @@ const genDelRemoteCommand = (branch, remote = 'origin') => {
   return `git push --delete ${remote} ${branch}`;
 };
 
+const getRegExp = (str) => {
+  const regs = str.split('/');
+  if (!regs[1]) return '';
+  if (regs[1] && regs[2]) return new RegExp(regs[1], regs[2]);
+  return new RegExp(regs[1]);
+};
+
 // clear local branch
 exports.deleteLocalBranchItem = (branch, isForce) => {
   console.log(
@@ -59,6 +66,7 @@ exports.deleteRemoteBranchItem = (branch, remote) => {
   shell.exec(genDelRemoteCommand(branch, remote));
 };
 
+exports.getRegExp = getRegExp;
 exports.getGitBranchText = getGitBranchText;
 exports.genDelLocalCommand = genDelLocalCommand;
 exports.genDelRemoteCommand = genDelRemoteCommand;

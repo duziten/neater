@@ -5,7 +5,7 @@
 ## Feature
 
 - 🚀 告别 git 命令，比 GUI 工具更加方便快捷
-- 🤙 多种模式支持：交互式模式、glob 匹配模式和 all in 模式
+- 🤙 多种模式支持：交互式模式、自定义正则匹配模式和 all in 模式
 - 🏥 默认保护最近使用分支和 master，检查工作目录是否需要清理
 
 ## Install
@@ -96,16 +96,14 @@ nt clear -ig dev develop
 nt clear -f
 ```
 
-### glob 匹配模式
-
+### 自定义正则匹配模式
+支持`js`正则表达式自定义检索分支：
 删除以 feat 开头的分支, -p 指定模式（默认也会启用保护，删除所有： `-n 0`）
 
 ```sh
-nt clear -e -p 'feat*'
+nt clear -e -p '/feat.*/'
 
 ```
-
-获取更过关于[glob 匹配](https://github.com/isaacs/minimatch)
 
 ### All in 模式（删除所有）
 

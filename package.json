@@ -18,7 +18,7 @@
     "node-cli"
   ],
   "author": "duziten",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@types/jest": "^26.0.10",
     "chalk": "^4.1.0",
@@ -29,5 +29,9 @@
   },
   "devDependencies": {
     "jest": "^26.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/duziten/neater.git"
   }
 }

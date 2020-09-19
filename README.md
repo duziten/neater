@@ -14,6 +14,8 @@
 > npm install -g neater
 // or yarn
 > yarn add -g neater
+//  or use npx
+> npx neater -v
 ...
 // success
 > nt -v
